@@ -5,7 +5,9 @@ ParserElement.setDefaultWhitespaceChars("")
 COMMENT_SIGN, OPEN_HEAD, CLOSE_HEAD, EOL \
         = map(Suppress, "#[]\n")
 allowed_chars = printables + " "
-allowed_chars += " …’‘«»“”–—àâäéèêëïîôöùûüçœÀÂÄÉÈÊËÏÎÔÖÙÛÜÇŒß"  # French and German chars
+allowed_chars += " …’‘«»“”–—ß
+allowed_chars += "àâäéèêëïîôöùûüçœ"
+allowed_chars += "ÀÂÄÉÈÊËÏÎÔÖÙÛÜÇŒ"
 allowed_chars += "{}×23"  # repeat chars
 WORDS   = Word(allowed_chars)
 INTEGER = Word(nums)
