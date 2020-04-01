@@ -6,8 +6,8 @@ COMMENT_SIGN, OPEN_HEAD, CLOSE_HEAD, EOL \
         = map(Suppress, "#[]\n")
 allowed_chars = printables + " "
 allowed_chars += " …’‘«»“”°–—ß¿¡"
-allowed_chars += "áàâäéèêëíîïóôöúùûüñçœ"
-allowed_chars += "ÁÀÂÄÉÈÊËÍÎÏÓÔÖÚÙÛÜÑÇŒ"
+allowed_chars += "áàâäéèêëíîìïóôöúùûüñçœ"
+allowed_chars += "ÁÀÂÄÉÈÊËÍÎÌÏÓÔÖÚÙÛÜÑÇŒ"
 allowed_chars += "{}×23"  # repeat chars
 WORDS   = Word(allowed_chars)
 INTEGER = Word(nums)
